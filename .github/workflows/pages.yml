@@ -32,12 +32,15 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@v4
       - name: Link da condividere
+        env:
+          URL: ${{ steps.deployment.outputs.page_url }}
+          V: ${{ github.run_number }}
         run: |
           {
-            echo "## Sito online"
+            echo "## Sito online — versione $V"
             echo ""
-            echo "**Link da condividere:** ${{ steps.deployment.outputs.page_url }}"
+            echo "**Link da condividere (sempre aggiornato):** ${URL}?v=${V}"
             echo ""
-            echo "- Italiano: ${{ steps.deployment.outputs.page_url }}?lang=it"
-            echo "- English: ${{ steps.deployment.outputs.page_url }}?lang=en"
+            echo "- Italiano: ${URL}?v=${V}&lang=it"
+            echo "- English: ${URL}?v=${V}&lang=en"
           } >> "$GITHUB_STEP_SUMMARY"
