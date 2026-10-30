@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cirispaccio — Trattoria napoletana a Milano</title>
+  <meta name="description" content="Cirispaccio: trattoria, tavola calda e bottega campana in Via Luigi Canonica 74, Milano. Mozzarella di bufala, paccheri alla sorrentina, ziti alla genovese.">
+  <meta name="theme-color" content="#C8102E">
+  <meta property="og:title" content="Cirispaccio — Napoli, a due passi da Sarpi">
+  <meta property="og:description" content="Trattoria, tavola calda e bottega campana in Via Luigi Canonica 74, Milano.">
+  <meta property="og:image" content="assets/img/sala-scaffali.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23C8102E'/%3E%3Ctext x='32' y='45' font-family='Georgia' font-style='italic' font-size='38' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#ambiente" data-i18n="skip">Vai al contenuto</a>
+
+  <header class="nav" id="top">
+    <a class="nav__brand" href="#top" aria-label="Cirispaccio">Cirispaccio</a>
+    <nav class="nav__links" id="menu" aria-label="Principale">
+      <a href="#ambiente" data-i18n="nav.place">L'ambiente</a>
+      <a href="#anime" data-i18n="nav.souls">Trattoria &amp; bottega</a>
+      <a href="#cucina" data-i18n="nav.menu">La cucina</a>
+      <a href="#dicono" data-i18n="nav.reviews">Dicono di noi</a>
+      <a href="#visita" data-i18n="nav.visit">Dove siamo</a>
+      <a class="nav__cta nav__cta--mobile" href="tel:+390249519340" data-i18n="nav.book">Prenota</a>
+    </nav>
+    <div class="nav__right">
+      <div class="lang" role="group" aria-label="Lingua / Language">
+        <button type="button" data-lang="it" aria-pressed="true">IT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="nav__cta" href="tel:+390249519340" data-i18n="nav.book">Prenota</a>
+      <button class="nav__toggle" type="button" aria-controls="menu" aria-expanded="false">
+        <span></span><span></span><span class="sr-only" data-i18n="nav.open">Apri menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <img class="hero__img" src="assets/img/sala-scaffali.jpg" alt="La sala di Cirispaccio con gli scaffali bianchi geometrici pieni di vini e prodotti campani" fetchpriority="high">
+      <div class="hero__shade"></div>
+      <div class="hero__content">
+        <p class="kicker" data-i18n="hero.kicker">Trattoria · Tavola calda · Bottega campana</p>
+        <h1 data-i18n-html="hero.title">Napoli,<br><em>a due passi da Sarpi.</em></h1>
+        <p class="hero__lead" data-i18n="hero.lead">In Via Canonica 74 la cucina campana si fa sottovoce: mozzarella di bufala, paccheri alla sorrentina, ziti alla genovese e una bottega dove tutto ciò che vedi sugli scaffali finisce anche nel piatto.</p>
+        <div class="hero__actions">
+          <a class="btn btn--red" href="tel:+390249519340" data-i18n="hero.call">Chiama e prenota</a>
+          <a class="btn btn--ghost" href="#cucina" data-i18n="hero.menu">Scopri la cucina</a>
+        </div>
+      </div>
+      <div class="hero__stamp" aria-hidden="true">
+        <span>Via Canonica</span><strong>74</strong><span>Milano</span>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Mozzarella di bufala</span><i>✦</i><span>Paccheri alla sorrentina</span><i>✦</i><span>Ziti alla genovese</span><i>✦</i><span>Parmigiana</span><i>✦</i><span>Provolone del Monaco DOP</span><i>✦</i><span>Lagane e ceci</span><i>✦</i><span>Galletto cotto a legna</span><i>✦</i><span>Babà</span><i>✦</i>
+        <span>Mozzarella di bufala</span><i>✦</i><span>Paccheri alla sorrentina</span><i>✦</i><span>Ziti alla genovese</span><i>✦</i><span>Parmigiana</span><i>✦</i><span>Provolone del Monaco DOP</span><i>✦</i><span>Lagane e ceci</span><i>✦</i><span>Galletto cotto a legna</span><i>✦</i><span>Babà</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- AMBIENTE -->
+    <section class="section ambiente" id="ambiente">
+      <div class="wrap ambiente__grid">
+        <div class="ambiente__text reveal">
+          <p class="eyebrow" data-i18n="place.eyebrow">01 — L'ambiente</p>
+          <h2 data-i18n-html="place.title">Una Napoli <em>gentile</em>, senza cartoline.</h2>
+          <p data-i18n="place.p1">Niente tovaglie a quadri né stampe nostalgiche. Da Cirispaccio la sala è bianca e luminosa, disegnata da scaffali geometrici che salgono fino al soffitto e custodiscono bottiglie di vino, conserve, pasta e specialità arrivate dalla Campania.</p>
+          <p data-i18n="place.p2">Si mangia su tovagliette stampate come un giornale, con le sedie rosse che d'estate escono sul marciapiede di Via Canonica. Il servizio è informale e caloroso: un ambiente familiare, allegro, a volte un po' caotico, e pieno di sorrisi.</p>
+          <ul class="facts">
+            <li><strong data-i18n="place.f1a">Sala</strong><span data-i18n="place.f1b">bianca, vini e prodotti campani a vista</span></li>
+            <li><strong data-i18n="place.f2a">Fuori</strong><span data-i18n="place.f2b">tavoli all'aperto sotto l'insegna rossa</span></li>
+            <li><strong data-i18n="place.f3a">Quartiere</strong><span data-i18n="place.f3b">Sarpi – Canonica, tra Chinatown e Arco della Pace</span></li>
+          </ul>
+        </div>
+        <figure class="ambiente__main reveal">
+          <img src="assets/img/sala-vini.jpg" alt="Scaffali bianchi con bottiglie di vino e tavoli della sala" loading="lazy">
+          <figcaption data-i18n="place.cap1">La sala: scaffali bianchi, vino e prodotti campani.</figcaption>
+        </figure>
+      </div>
+
+      <div class="wrap mosaic">
+        <figure class="mosaic__a reveal">
+          <img src="assets/img/ingresso.jpg" alt="Ingresso di Cirispaccio con l'insegna Mozzarella di bufala e le sedie rosse" loading="lazy">
+          <figcaption data-i18n="place.cap2">L'ingresso su Via Canonica.</figcaption>
+        </figure>
+        <figure class="mosaic__b reveal">
+          <img src="assets/img/insegna-sera.jpg" alt="L'insegna rossa Mozzarella di bufala illuminata la sera" loading="lazy">
+          <figcaption data-i18n="place.cap3">La sera, quando si accende l'insegna.</figcaption>
+        </figure>
+        <figure class="mosaic__c reveal">
+          <img src="assets/img/bancone.jpg" alt="Il bancone con vetrina dei prodotti, vini e il gallo in ceramica" loading="lazy">
+          <figcaption data-i18n="place.cap4">Il bancone della tavola calda.</figcaption>
+        </figure>
+        <blockquote class="mosaic__quote reveal">
+          <p data-i18n="place.quote">“Un ambiente molto caldo, allegro, caotico e pieno di sorrisi e veracità.”</p>
+          <cite data-i18n="place.quoteBy">— Gianni, recensione Google</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- TRE ANIME -->
+    <section class="section anime" id="anime">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--light reveal" data-i18n="souls.eyebrow">02 — Tre anime, un indirizzo</p>
+        <h2 class="reveal" data-i18n-html="souls.title">Ti siedi, <em>porti via</em> o fai la spesa.</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <span class="card__num">I</span>
+            <h3 data-i18n="souls.c1t">Trattoria</h3>
+            <p data-i18n="souls.c1p">Primi napoletani, secondi di carne e la parmigiana: porzioni generose e sapori di casa, a pranzo e a cena. Niente pesce, poca scena, tanta sostanza.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__num">II</span>
+            <h3 data-i18n="souls.c2t">Tavola calda &amp; asporto</h3>
+            <p data-i18n="souls.c2p">Il bancone dei piatti d'asporto per chi ha fretta: pasta al forno, parmigiana e specialità pronte da portare a casa o in ufficio. Disponibile anche la consegna a domicilio.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__num">III</span>
+            <h3 data-i18n="souls.c3t">Bottega campana</h3>
+            <p data-i18n="souls.c3p">Mozzarella di bufala, Provolone del Monaco DOP di Agerola, pasta di piccoli produttori campani, vini del Cilento. Tutto ciò che è in vendita è usato anche in cucina.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUCINA -->
+    <section class="section cucina" id="cucina">
+      <div class="wrap">
+        <div class="cucina__head reveal">
+          <p class="eyebrow" data-i18n="menu.eyebrow">03 — La cucina</p>
+          <h2 data-i18n-html="menu.title">Dalla carta, <em>come a casa della nonna.</em></h2>
+          <p class="cucina__intro" data-i18n="menu.intro">Una selezione di piatti dalla carta di Cirispaccio. La proposta cambia con le stagioni: chiedi in sala i piatti del giorno.</p>
+        </div>
+
+        <div class="dishes">
+          <figure class="dish reveal">
+            <img src="assets/img/paccheri-sorrentina.jpg" alt="Paccheri alla sorrentina con pomodoro, mozzarella e basilico" loading="lazy">
+            <figcaption><strong data-i18n="menu.d1">Paccheri alla sorrentina</strong><span data-i18n="menu.d1s">pomodoro, mozzarella, basilico, provola</span></figcaption>
+          </figure>
+          <figure class="dish reveal">
+            <img src="assets/img/mozzarella-bufala.jpg" alt="Mozzarella di bufala campana DOP con prosciutto" loading="lazy">
+            <figcaption><strong data-i18n="menu.d2">Mozzarella di bufala DOP</strong><span data-i18n="menu.d2s">la regina della casa</span></figcaption>
+          </figure>
+          <figure class="dish reveal">
+            <img src="assets/img/parmigiana.jpg" alt="Parmigiana di melanzane" loading="lazy">
+            <figcaption><strong data-i18n="menu.d3">Parmigiana di melanzane</strong><span data-i18n="menu.d3s">al forno, come da tradizione</span></figcaption>
+          </figure>
+          <figure class="dish reveal">
+            <img src="assets/img/ziti-genovese.jpg" alt="Ziti alla genovese con ragù di cipolle e carne" loading="lazy">
+            <figcaption><strong data-i18n="menu.d4">Zitoni alla genovese</strong><span data-i18n="menu.d4s">cipolle e carne in lunga cottura</span></figcaption>
+          </figure>
+          <figure class="dish reveal">
+            <img src="assets/img/ziti-al-forno.jpg" alt="Ziti al forno con ragù" loading="lazy">
+            <figcaption><strong data-i18n="menu.d5">Ziti al forno</strong><span data-i18n="menu.d5s">ragù, salame e uova</span></figcaption>
+          </figure>
+          <figure class="dish reveal">
+            <img src="assets/img/pastiera.jpg" alt="Fetta di pastiera napoletana" loading="lazy">
+            <figcaption><strong data-i18n="menu.d6">Pastiera</strong><span data-i18n="menu.d6s">dolce della tradizione</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="carta reveal">
+          <div class="carta__col">
+            <h3 data-i18n="menu.primi">Primi</h3>
+            <ul>
+              <li><span data-i18n="m.p1">Pasta mista e fagioli</span><b>9</b></li>
+              <li><span data-i18n="m.p2">Lagane e ceci</span><b>9</b></li>
+              <li><span data-i18n="m.p3">Paccheri con mozzarella di bufala affumicata</span><b>9</b></li>
+              <li><span data-i18n="m.p4">Zitoni alla genovese</span><b>9</b></li>
+              <li><span data-i18n="m.p5">Ziti al forno</span><b>10</b></li>
+            </ul>
+          </div>
+          <div class="carta__col">
+            <h3 data-i18n="menu.secondi">Secondi</h3>
+            <ul>
+              <li><span data-i18n="m.s1">Galletto alla diavola cotto a legna</span><b>13</b></li>
+              <li><span data-i18n="m.s2">Sbriciolata di maiale con patate</span><b>10</b></li>
+              <li><span data-i18n="m.s3">Straccetti di maiale con patate</span><b>10</b></li>
+              <li><span data-i18n="m.s4">Mozzarella di bufala campana DOP</span><b>21</b></li>
+              <li><span data-i18n="m.s5">Caprese</span><b>9</b></li>
+            </ul>
+          </div>
+          <div class="carta__col">
+            <h3 data-i18n="menu.contorni">Contorni &amp; dolci</h3>
+            <ul>
+              <li><span data-i18n="m.c1">Patate al forno</span><b>5</b></li>
+              <li><span data-i18n="m.c2">Scarola e fagioli</span><b>8</b></li>
+              <li><span data-i18n="m.c3">Insalata gustosa</span><b>9</b></li>
+              <li><span data-i18n="m.c4">Sfogliatella partenopea</span><b>3</b></li>
+              <li><span data-i18n="m.c5">Babà napoletano</span><b>5,5</b></li>
+            </ul>
+          </div>
+          <p class="carta__note" data-i18n="menu.note">Prezzi in euro, indicativi: verifica la carta aggiornata in sala. Vini campani e del Cilento anche al calice.</p>
+        </div>
+
+        <div class="cucina__strip">
+          <figure class="reveal"><img src="assets/img/paccheri.jpg" alt="Paccheri al pomodoro" loading="lazy"></figure>
+          <figure class="reveal"><img src="assets/img/secondo-patate.jpg" alt="Secondo di carne con patate al forno" loading="lazy"></figure>
+          <figure class="reveal"><img src="assets/img/caffe-moka.jpg" alt="Caffè servito con la moka al tavolo" loading="lazy">
+            <figcaption data-i18n="menu.coffee">E per finire, il caffè con la moka al tavolo.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- DICONO DI NOI -->
+    <section class="section dicono" id="dicono">
+      <div class="wrap">
+        <div class="dicono__head reveal">
+          <p class="eyebrow" data-i18n="rev.eyebrow">04 — Dicono di noi</p>
+          <h2 data-i18n-html="rev.title">La parola <em>ai clienti.</em></h2>
+          <div class="scores">
+            <div><strong>4,4</strong><span data-i18n="rev.google">Google · 590+ recensioni</span></div>
+            <div><strong>4,5</strong><span data-i18n="rev.ta">Tripadvisor</span></div>
+          </div>
+        </div>
+        <div class="quotes">
+          <blockquote class="reveal"><p data-i18n="rev.q1">“Cucina con porzioni e gusto come a casa dalla nonna!”</p><cite>Beatrice</cite></blockquote>
+          <blockquote class="reveal"><p data-i18n="rev.q2">“Eccezionale la parmigiana, gli ziti alla genovese ed i paccheri alla sorrentina.”</p><cite>Iacopo A.</cite></blockquote>
+          <blockquote class="reveal"><p data-i18n="rev.q3">“Posto autentico, cibo buonissimo e prezzi contenuti!!”</p><cite>Carolina</cite></blockquote>
+          <blockquote class="reveal"><p data-i18n="rev.q4">“Cibo tradizionale di buona qualità in ambiente familiare.”</p><cite>Antonio N.</cite></blockquote>
+          <blockquote class="reveal"><p data-i18n="rev.q5">“Le porzioni sono enormi! Cibo di ottima qualità.”</p><cite>Alessandra S.</cite></blockquote>
+          <blockquote class="reveal"><p data-i18n="rev.q6">“Consiglio vivamente lagane e ceci.”</p><cite>Gianluca</cite></blockquote>
+        </div>
+        <p class="press reveal" data-i18n-html="rev.press">Su <em>Dissapore</em>: «Cirispaccio, la Napoli sottovoce e gentile».</p>
+      </div>
+    </section>
+
+    <!-- VISITA -->
+    <section class="section visita" id="visita">
+      <div class="wrap visita__grid">
+        <div class="visita__info reveal">
+          <p class="eyebrow eyebrow--light" data-i18n="visit.eyebrow">05 — Vieni a trovarci</p>
+          <h2 data-i18n-html="visit.title">Ti aspettiamo <em>a tavola.</em></h2>
+          <dl>
+            <div><dt data-i18n="visit.addr">Indirizzo</dt><dd><a href="https://www.google.com/maps/place/Cirispaccio/@45.480688,9.1708377,17z" target="_blank" rel="noopener">Via Luigi Canonica, 74<br>20154 Milano</a></dd></div>
+            <div><dt data-i18n="visit.tel">Telefono</dt><dd><a href="tel:+390249519340">+39 02 4951 9340</a></dd></div>
+            <div><dt data-i18n="visit.hours">Orari</dt><dd>
+              <span data-i18n="visit.h1">Martedì – Domenica</span><br>12:00 – 15:00 · 19:00 – 23:00<br>
+              <span class="muted" data-i18n="visit.h2">Lunedì chiuso</span></dd></div>
+            <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/cirispaccio_official/" target="_blank" rel="noopener">@cirispaccio_official</a></dd></div>
+          </dl>
+          <ul class="tags">
+            <li data-i18n="visit.t1">Prenotazione</li>
+            <li data-i18n="visit.t2">Asporto</li>
+            <li data-i18n="visit.t3">Consegna</li>
+            <li data-i18n="visit.t4">Tavoli all'aperto</li>
+            <li data-i18n="visit.t5">Accessibile in sedia a rotelle</li>
+          </ul>
+          <div class="hero__actions">
+            <a class="btn btn--red" href="tel:+390249519340" data-i18n="visit.call">Chiama</a>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&destination=Cirispaccio%2C+Via+Luigi+Canonica+74%2C+Milano" target="_blank" rel="noopener" data-i18n="visit.dir">Indicazioni</a>
+          </div>
+        </div>
+        <div class="visita__map reveal">
+          <iframe title="Mappa Cirispaccio" src="https://www.google.com/maps?q=Cirispaccio,+Via+Luigi+Canonica+74,+20154+Milano&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__top">
+      <span class="footer__brand">Cirispaccio</span>
+      <p data-i18n="footer.tag">Trattoria · Tavola calda · Bottega campana — Via Luigi Canonica 74, Milano</p>
+    </div>
+    <p class="credits wrap" data-i18n="footer.credits">Sito demo non ufficiale. Foto: Dissapore (M. Pistagnesi), Sluurpy e utenti Google Maps. Informazioni da Google Maps, Tripadvisor, Dissapore e Sluurpy.</p>
+    <a class="fico" href="mailto:info@ficolc.com" aria-label="Website designed by FICO — info@ficolc.com">
+      <span data-i18n="footer.designed">Website designed by FICO</span>
+      <img src="assets/img/fico-logo.svg" alt="FICO" width="40" height="40">
+    </a>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
