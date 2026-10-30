@@ -88,12 +88,6 @@ h1 em, h2 em { font-style: italic; font-weight: 400; color: var(--red); }
 }
 .hero__stamp strong { font: 800 46px/1 var(--serif); letter-spacing: 0; }
 
-/* Ticker */
-.ticker { background: var(--red); color: #fff; overflow: hidden; padding: 16px 0; border-block: 1px solid var(--red-dark); }
-.ticker__track { display: flex; gap: 28px; width: max-content; animation: ticker 40s linear infinite; font: italic 400 22px/1 var(--serif); white-space: nowrap; }
-.ticker__track i { font-style: normal; font-size: 14px; opacity: .7; align-self: center; }
-@keyframes ticker { to { transform: translateX(-50%); } }
-
 /* Ambiente */
 .ambiente { background:
   repeating-linear-gradient(0deg, transparent 0 31px, rgba(23,26,24,.035) 31px 32px), var(--paper); }
@@ -223,9 +217,13 @@ html[lang="en"] .carta::before { content: "The menu"; }
   display: inline-flex; align-items: center; gap: 14px; text-decoration: none;
   font-style: italic; font-size: 15px; letter-spacing: .02em; color: #6E6A62; transition: color .25s;
 }
-.fico img { width: 40px; height: 40px; transition: transform .4s; }
+.fico__seal {
+  width: 40px; height: 40px; border-radius: 50%; overflow: hidden; flex: none; background: #F6F0DF;
+  border: 1.5px solid rgba(255,255,255,.25); transition: transform .4s, border-color .25s;
+}
+.fico__seal img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.12); }
 .fico:hover { color: #fff; }
-.fico:hover img { transform: rotate(-12deg) scale(1.06); }
+.fico:hover .fico__seal { transform: rotate(-12deg) scale(1.06); border-color: rgba(255,255,255,.6); }
 
 /* Reveal */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1); }
@@ -233,7 +231,7 @@ html[lang="en"] .carta::before { content: "The menu"; }
 .no-js .reveal { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; }
-  .ticker__track, .hero__img { animation: none; }
+  .hero__img { animation: none; }
   html { scroll-behavior: auto; }
 }
 
@@ -283,6 +281,5 @@ html[lang="en"] .carta::before { content: "The menu"; }
   .cucina__strip { grid-template-columns: 1fr 1fr; }
   .cucina__strip figure:last-child { grid-column: 1 / -1; }
   .facts li, .visita dl div { grid-template-columns: 1fr; gap: 2px; }
-  .ticker__track { font-size: 18px; }
   .lang button { padding: 7px 8px; }
 }
