@@ -2,8 +2,8 @@
 
 Demo one-page per **Cirispaccio**, trattoria, tavola calda e bottega campana in Via Luigi Canonica 74, Milano. In italiano e inglese, responsive per smartphone e desktop.
 
-- **Sito live:** https://fico-azienda.github.io/Crispaccio/
-- Versione inglese: https://fico-azienda.github.io/Crispaccio/?lang=en
+- **Sito live:** https://fico-azienda.github.io/Cirispaccio/
+- Versione inglese: https://fico-azienda.github.io/Cirispaccio/?lang=en
 
 Ogni push su `main` ripubblica il sito tramite GitHub Actions (workflow *Deploy sito su GitHub Pages*). Il link compare nel riepilogo di ogni esecuzione.
 
